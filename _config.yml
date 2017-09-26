@@ -7,7 +7,10 @@ title: 飘叶音
 subtitle: piaoyeyin
 description: Your Eyes Can See the World Without Me.
 author: Chill Yu
-language: zh-Cn
+language: 
+- en
+- zh-CN
+- zh-TW
 timezone: Asia/Shanghai
 
 # URL

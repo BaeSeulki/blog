@@ -1,5 +1,5 @@
 ---
-title: Shell Setting Record
+title: Shell 相关问题
 date: 2017-09-26 12:03:53
 categories:
 - Shell
@@ -31,8 +31,11 @@ Linux里边是.bashrc 而MAC 是.bash_profile 。
 ~/.zshrc 在.zshrc文件末尾增加.bash_profile的引用：`source ~/.bash_profile`
 
 ### python
-用brew安装的python2.7.14 和3.6.2。  
-但为了管理第三方包方便点，决定试试anaconda。
+
+### Java
+1. java怎么执行shell脚本
+
+[Java执行shell遇到的各种问题](http://blog.csdn.net/caohaicheng/article/details/22928297) 尤其是问题3，脚本中有关联脚本时，注意运行环境是当前java类的运行目录，而不是shell脚本的。
 
 
 

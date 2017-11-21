@@ -39,3 +39,38 @@ Linux里边是.bashrc 而MAC 是.bash_profile 。
 
 
 
+### 脚本常用技巧
+#### 1. bash set 命令
+[Bash 脚本 set 命令教程](http://www.ruanyifeng.com/blog/2017/11/bash-set.html)  
+常用方法：  
+
+```shell
+# 写法一
+set -euxo pipefail
+
+# 写法二
+set -eux
+set -o pipefail
+```
+或者执行脚本时传入参数
+
+```shell
+$ bash -euxo pipefail script.sh
+```
+
+#### 2. 系统关机和重启
+[系统关机和重启](http://rackie386.blog.51cto.com/11279229/1930686)
+
+```shell
+halt [OPTIONS...]
+poweroff [OPTIONS...]
+reboot [OPTIONS...]
+shutdown [OPTIONS...] [TIME] [WALL...]
+init [OPTIONS...] {COMMAND}
+```
+> 
+推荐使用的关机命令：  
+halt，poweroff，init 0，shutdown，shutdown +5 "warning system will be shutdown after 5m"  
+推荐使用的重启命令：  
+reboot，ini 6，shutdown -r  
+
